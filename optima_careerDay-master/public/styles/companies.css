@@ -1,0 +1,38 @@
+.company-logos{
+    border-radius: 10%;   
+    height: 3rem;
+    min-width: 3rem;
+}
+
+.company-container{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 15%;
+}
+
+.company-container h3{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.4rem 0;
+    align-items: center;
+}
+
+.company-container h3 a{
+    text-align: center;
+    width: 160px;
+}
+
+
+
+
+#button1 {
+    position: absolute;
+    display: flex;
+    top: 2rem;
+    left: 16rem;
+    width: 45px;
+    height: 45px;
+    background: white;
+}

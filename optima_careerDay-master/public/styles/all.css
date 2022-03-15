@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab';
+   
+}
+
+title{
+    font-weight: 900;
+    font-size: xx-large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    color: white;
+    text-shadow: 1px 1px 0 #000,
+    -1px 1px 0 #000,
+    1px -1px 0 #000,
+    -1px -1px 0 #000,
+    0px 1px 0 #000,
+    0px -1px 0 #000,
+    -1px 0px 0 #000,
+    1px 0px 0 #000,
+    2px 2px 0 #000,
+    -2px 2px 0 #000,
+    2px -2px 0 #000,
+    -2px -2px 0 #000,
+    0px 2px 0 #000,
+    0px -2px 0 #000,
+    -2px 0px 0 #000,
+    2px 0px 0 #000,
+    1px 2px 0 #000,
+    -1px 2px 0 #000,
+    1px -2px 0 #000,
+    -1px -2px 0 #000,
+    2px 1px 0 #000,
+    -2px 1px 0 #000,
+    2px -1px 0 #000,
+    -2px -1px 0 #000;
+ }
+
+ h3{
+    display: flex;
+    justify-content: space-evenly;
+    font-family: sans-serif;
+    font-weight: 300;
+}
+
+
+
+.header{ 
+    background-color: white;
+    backdrop-filter: blur(25px);
+    box-shadow: 0px 5px 44px -2px rgba(0, 0, 0, 0.16);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+}
+
+.header-logo{
+    margin-left: 40px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.header-inner{
+    width: 100%;
+    margin-left: 50px;
+}
+
+.header-inner *{
+    margin: 0 100px 0 0;
+    color: black;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.container{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 75.4vh;
+    width: 100%;
+}
+
+.main-canvas{
+    background-color: white;
+    overflow-y: scroll;
+    max-height: 600px;
+    max-width: 1000px;
+    height: 70%;
+    width: 90%;
+    box-shadow: 0px 0px 18px 5px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0px 0px 18px 5px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 0px 18px 5px rgba(0,0,0,0.1);
+    position: absolute;
+}
+
+.under-canvas{
+    background-color: rgba(128, 128, 128, 0.158);
+    height: 75.5vh;
+    width: 100%;
+}
+
+.footer{
+    width: 100%;
+    height: 7.1rem;
+    background-color: white;
+    backdrop-filter: blur(25px);
+    box-shadow: 0px 5px 44px -2px rgba(0, 0, 0, 0.16);
+    padding-right: 25%;
+    color: black;
+}
+
+.footer-inner{
+  padding-left: 1rem;
+}
+
+#footer-email{
+    color: black;
+}
+
+
+
+@media (max-width: 1010px) {
+    .header{
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    .header-inner{
+        text-align: center;
+    }
+
+    .quiz_box{
+        width: 80%;
+    }
+    #button {
+        visibility: hidden;
+        display: none;
+    }
+    #sidebar {
+        visibility: hidden;
+        display: none;
+    }
+    .sidebarlogo {
+        visibility: hidden;
+        display: none;
+    }
+
+    #sidebar a {
+        visibility: hidden;
+       
+    }
+    .sidebartext {
+        visibility: hidden;
+        display: none;
+    }
+  
+}
+@media (max-width: 400px) {
+    .header{
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    .header-inner{
+        text-align: center;
+        margin: 0;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .quiz_box{
+        width: 80%;
+    }
+    .header {
+        display: none;
+    }
+    #button1 {
+        position: relative;
+        height: 30px;
+        width: 50px;
+        background-color: #000;
+        visibility: visible;
+    }
+    #sidebar {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
+        align-items: center;
+        height: 100vh;
+        width: 0px;
+        background: rgb(255, 255, 255);
+        transition: ease-in 0.5s;
+        z-index: 2;
+        visibility: visible;
+    }
+    .sidebarlogo {
+        width: 100%;
+        height: 100%;
+        visibility: visible;
+    }
+
+    #sidebar a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-size: 1.5rem;
+        font-family: sans-serif;
+        visibility: visible;
+    }
+    .sidebartext {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100%;
+        visibility: visible;
+
+    }
+    .numbertext {
+        display: none;
+    }
+}
