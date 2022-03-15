@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OptiCareer Day 2022</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'>
+    <link rel="stylesheet" href="styles/quiz.css">
+    <link rel="stylesheet" href="styles/all.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="header-logo">
+            <img id="logo" src="/images/optima-logo.svg" alt="">
+        </div>
+        <div class="header-inner">
+
+            <a href="index.html" class="header-text">Hem</a>
+            <a href="quiz.html" class="header-text">Quiz</a>
+            <a href="companies.html" class="header-text">Företag</a>
+            <a href="optima.html" class="header-text">Optima</a>
+        </div>
+    </div>
+
+    <div id="button1">
+        <button></button>
+    </div>
+
+    <div id="sidebar">
+        <a href="index.html">
+            <img class="sidebarlogo" src="images/OptimaLogoWelearnforlife.png" alt="">
+        </a>
+
+        <div class="sidebartext">
+
+            <a href="quiz.html" class="header-text">Quiz</a>
+            <a href="companies.html" class="header-text">Företag</a>
+            <a href="optima.html" class="header-text">Optima</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="under-canvas"> </div>
+        <div class="main-canvas">
+
+            <div class="send_btn"><button>Send</button></div>
+            <!-- start Quiz button -->
+            <div class="start_btn" id="start"><button>Starta Quizen</button></div>
+            <!-- Info Box -->
+            <div class="info_box">
+                <div class="info-title"><span>Quiz Regler</span></div>
+                <div class="info-list">
+                    <div class="info">1. Du kommer bara ha <span>15 sekunder</span> per fråga.</div>
+                    <div class="info">2. När du har valt ditt svar kan det inte ändras.</div>
+                    <div class="info">3. Du kan inte välja några alternativ när tiden är ute.</div>
+                    <div class="info">4. Du kan inte lämna quizen när du spelar.</div>
+                    <div class="info">5. Du får poäng för hur många rätt svar har valts.</div>
+                </div>
+                <div class="buttons">
+                    <button class="quit">Lämna Quiz</button>
+                    <button class="restart">Fortsätt</button>
+                </div>
+            </div>
+            <!-- Quiz Box -->
+            <div class="quiz_box">
+                <header>
+                    <div class="title">Opticareer Quiz</div>
+                    <div class="timer">
+                        <div class="time_left_txt">Tid Kvar</div>
+                        <div class="timer_sec">15</div>
+                    </div>
+                    <div class="time_line"></div>
+                </header>
+                <section>
+                    <div class="que_text">
+                        <!-- Here I've inserted question from JavaScript -->
+                    </div>
+                    <div class="option_list">
+                        <!-- Here I've inserted options from JavaScript -->
+                    </div>
+                </section>
+                <!-- footer of Quiz Box -->
+                <footer>
+                    <div class="total_que">
+                        <!-- Here I've inserted Question Count Number from JavaScript -->
+                    </div>
+                    <button class="next_btn">Nästa Fråga</button>
+                </footer>
+            </div>
+            <!-- Result Box -->
+            <div class="result_box">
+                <div class="icon">
+                    <i class="fas fa-crown"></i>
+                </div>
+                <div class="complete_text">Du har klarat Quizen!</div>
+                <div class="score_text">
+                    <!-- Here I've inserted Score Result from JavaScript -->
+                </div>
+                <label for="name" id="text">Namn</label>
+                <input type="text" name="name" id="namn" autocomplete="off">
+                <label for="lastName" id="text">Efternamn</label>
+                <input type="text" name="lastName" id="lastName" autocomplete="off">
+                <label for="email" id="text">Email</label>
+                <input type="email" name="email" id="email" autocomplete="off">
+                <label for="Number" id="text">Tel nummer</label>
+                <input type="text" name="phoneNumber" id="telNumber" autocomplete="off">
+                <div class="buttons">
+                    <button class="restart">Starta om Quizen</button>
+                    <button class="quit">Sluta Quizen</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="footer-inner">
+            <h4>Trädgårdsgatan 30</h4>
+            <h4> 68600 Jakobstad</h4>
+            <h4> tel. (0)6 7855 222</h4>
+            <a href="samkommunen@optimaedu.fi" id="footer-email"> samkommunen@optimaedu.fi</a>
+        </div>
+
+    </div>
+    <!-- Inside this JavaScript file I've inserted Questions and Options only -->
+    <script src="script/questions.js"></script>
+    <!-- Inside this JavaScript file I've coded all Quiz Codes -->
+    <script src="script/quiz.js"></script>
+    <!-- sidebar-->
+    <script src="script/app.js"></script>
+</body>
+
+</html>
