@@ -137,27 +137,7 @@ title{
     .quiz_box{
         width: 80%;
     }
-    #button {
-        visibility: hidden;
-        display: none;
-    }
-    #sidebar {
-        visibility: hidden;
-        display: none;
-    }
-    .sidebarlogo {
-        visibility: hidden;
-        display: none;
-    }
-
-    #sidebar a {
-        visibility: hidden;
-       
-    }
-    .sidebartext {
-        visibility: hidden;
-        display: none;
-    }
+ 
   
 }
 @media (max-width: 400px) {
