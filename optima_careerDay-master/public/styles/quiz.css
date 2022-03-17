@@ -168,6 +168,7 @@ form{
 section{
     padding: 25px 30px 20px 30px;
     background: #fff;
+    max-height: 400px;
 }
 section .que_text{
     font-size: 25px;
@@ -342,10 +343,17 @@ footer button.show{
     color: #fff;
     background: #007bff;
 }
+
 #button1 {
-    position: relative;
-    height: 30px;
-    width: 50px;
-    background-color: #000;
-    visibility: visible;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+.meny {
+    height: 5px;
+    width: 40px;
+    border-radius: 5px;
+    background-color: black;
+    margin: 0.2rem;
 }
