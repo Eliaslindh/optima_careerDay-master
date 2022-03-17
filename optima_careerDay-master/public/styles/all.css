@@ -88,9 +88,9 @@ title{
 .main-canvas{
     background-color: white;
     overflow-y: scroll;
-    max-height: 600px;
+    max-height: 100%;
     max-width: 1000px;
-    height: 70%;
+    height: 100%;
     width: 90%;
     box-shadow: 0px 0px 18px 5px rgba(0,0,0,0.1);
     -webkit-box-shadow: 0px 0px 18px 5px rgba(0,0,0,0.1);
@@ -106,7 +106,7 @@ title{
 
 .footer{
     width: 100%;
-    height: 7.1rem;
+    height: 10%;
     background-color: white;
     backdrop-filter: blur(25px);
     box-shadow: 0px 5px 44px -2px rgba(0, 0, 0, 0.16);
@@ -137,27 +137,23 @@ title{
     .quiz_box{
         width: 80%;
     }
-    #button {
-        visibility: hidden;
-        display: none;
-    }
-    #sidebar {
-        visibility: hidden;
-        display: none;
-    }
-    .sidebarlogo {
-        visibility: hidden;
+ 
+    .sidebar {
         display: none;
     }
 
-    #sidebar a {
-        visibility: hidden;
-       
-    }
     .sidebartext {
-        visibility: hidden;
         display: none;
     }
+
+    #button1 {
+        display: none;
+    }
+    .sidebarlogo {
+        display: none;
+    }
+
+  
   
 }
 @media (max-width: 400px) {
@@ -180,11 +176,17 @@ title{
         display: none;
     }
     #button1 {
-        position: relative;
-        height: 30px;
-        width: 50px;
-        background-color: #000;
-        visibility: visible;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .meny {
+        height: 5px;
+        width: 40px;
+        border-radius: 5px;
+        background-color: black;
+        margin: 0.2rem;
     }
     #sidebar {
         position: absolute;
@@ -192,17 +194,24 @@ title{
         flex-direction: column;
         overflow-x: hidden;
         align-items: center;
-        height: 100vh;
+        height: 100%;
         width: 0px;
         background: rgb(255, 255, 255);
         transition: ease-in 0.5s;
         z-index: 2;
-        visibility: visible;
+        display: block;
+    }
+
+    #close {
+        position: absolute;
+        top: 6.5rem;
+        right: 0.5rem;
     }
     .sidebarlogo {
-        width: 100%;
-        height: 100%;
+        width: auto;
+        max-height: 100px;
         visibility: visible;
+        display: block;
     }
 
     #sidebar a {
@@ -217,11 +226,12 @@ title{
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        height: 100%;
+        height: 80%;
         visibility: visible;
 
     }
     .numbertext {
         display: none;
     }
+
 }

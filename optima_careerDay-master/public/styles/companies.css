@@ -30,9 +30,14 @@
 #button1 {
     position: absolute;
     display: flex;
-    top: 2rem;
-    left: 16rem;
-    width: 45px;
-    height: 45px;
-    background: white;
+    flex-direction: column;
+   
+}
+
+.meny {
+    height: 5px;
+    width: 40px;
+    border-radius: 5px;
+    background-color: black;
+    margin: 0.2rem;
 }

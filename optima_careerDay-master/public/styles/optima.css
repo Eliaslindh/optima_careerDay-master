@@ -134,9 +134,16 @@ img {
    width: 50%;
 }
 #button1 {
-  position: relative;
-  height: 30px;
-  width: 50px;
-  background-color: #000;
-  visibility: visible;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.meny {
+  height: 5px;
+  width: 40px;
+  border-radius: 5px;
+  background-color: black;
+  margin: 0.2rem;
 }
