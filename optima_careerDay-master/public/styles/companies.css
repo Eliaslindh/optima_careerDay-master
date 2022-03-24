@@ -1,21 +1,40 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital@1&display=swap');
+
+
+
+
+title {
+    font-family: sans-serif;
+}
+.container {
+    max-height: 70%;
+}
 .company-logos{
     border-radius: 10%;   
-    height: 3rem;
-    min-width: 3rem;
+    height: auto;
+    max-width: 5rem;
+    margin: 2rem;
 }
 
 .company-container{
     width: 70%;
     height: 100%;
     display: flex;
+    align-items: center;
     flex-direction: column;
     margin: 0 15%;
+    text-align: center;
+    background-color: white;
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+   
 }
 
 .company-container h3{
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    
     justify-content: space-between;
     margin: 0.4rem 0;
     align-items: center;
@@ -30,7 +49,6 @@
     position: absolute;
     display: flex;
     flex-direction: column;
-   
 }
 
 .meny {
@@ -39,4 +57,38 @@
     border-radius: 5px;
     background-color: black;
     margin: 0.2rem;
+}
+
+
+.border-style {
+    width: 250px;
+    height: 5px;
+    border-radius: 10px;
+    background:  linear-gradient(to bottom left, #f83600, #f9d423);
+}
+
+.border-style-upm {
+    width: 80px;
+    height: 5px;
+    border-radius: 10px;
+    background:  linear-gradient(to bottom left, #f83600, #f9d423);
+}
+.border-style-prisma {
+    width: 80px;
+    height: 5px;
+    border-radius: 10px;
+    background:  linear-gradient(to bottom left, #f83600, #f9d423);
+}
+.border-style-ahlbäck-alerte {
+    width: 180px;
+    height: 5px;
+    border-radius: 10px;
+    background:  linear-gradient(to bottom left, #f83600, #f9d423);
+}
+
+.sidebar-bottom-border {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }

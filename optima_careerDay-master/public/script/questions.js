@@ -209,6 +209,28 @@ let questions = [
       "1875"
     ]
   },
+  {
+    numb: 20,
+    question: "När grundades mirka",
+    answer: "1",
+    options: [
+      "1943",
+      "1920",
+      "1966",
+      "1955"
+    ]
+  },
+  {
+    numb: 21,
+    question: "Hur mycket vatten kan man spara per år med vatten återvinnare",
+    answer: "1897",
+    options: [
+      "upp till 24 000 M3 per år",
+      "Upp till 24 000 liter per år",
+      "Upp till 40 000 M3 per år",
+      "1875"
+    ]
+  },
   // you can uncomment the below codes and make duplicate as more as you want to add question
   // but remember you need to give the numb value serialize like 1,2,3,5,6,7,8,9.....
   //   {

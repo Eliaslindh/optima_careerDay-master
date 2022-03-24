@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital@1&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
@@ -7,37 +11,14 @@
 }
 
 title{
-    font-weight: 900;
+    font-family: sans-serif;
+    font-weight: 500;
     font-size: xx-large;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 1rem;
-    color: white;
-    text-shadow: 1px 1px 0 #000,
-    -1px 1px 0 #000,
-    1px -1px 0 #000,
-    -1px -1px 0 #000,
-    0px 1px 0 #000,
-    0px -1px 0 #000,
-    -1px 0px 0 #000,
-    1px 0px 0 #000,
-    2px 2px 0 #000,
-    -2px 2px 0 #000,
-    2px -2px 0 #000,
-    -2px -2px 0 #000,
-    0px 2px 0 #000,
-    0px -2px 0 #000,
-    -2px 0px 0 #000,
-    2px 0px 0 #000,
-    1px 2px 0 #000,
-    -1px 2px 0 #000,
-    1px -2px 0 #000,
-    -1px -2px 0 #000,
-    2px 1px 0 #000,
-    -2px 1px 0 #000,
-    2px -1px 0 #000,
-    -2px -1px 0 #000;
+   
  }
 
  h3{
@@ -174,6 +155,9 @@ title{
         flex-direction: column;
         padding-bottom: 20px;
     }
+    .header-text {
+        text-align: center;
+    }
 
     .header-inner{
         text-align: center;
@@ -214,6 +198,8 @@ title{
         transition: ease-in 0.5s;
         z-index: 2;
         display: block;
+        border-right: 2px solid linear-gradient(to bottom left, #f83600, #f9d423);
+        border-top: 2px solid linear-gradient(to bottom left, #f83600, #f9d423);
     }
 
     #close {
@@ -234,6 +220,10 @@ title{
         font-size: 1.5rem;
         font-family: sans-serif;
         visibility: visible;
+        
+     
+        border-radius: 2px;
+       
     }
     .sidebartext {
         display: flex;
@@ -246,6 +236,29 @@ title{
     }
     .numbertext {
         display: none;
+    }
+    .headshot {
+        flex-shrink: 0;
+        margin: 20px;
+        height: calc(150px + 6vw);
+        width: calc(150px + 6vw);
+        border: calc(8px + 0.2vw) solid transparent;
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+        background-size: cover;
+        box-sizing: border-box;
+        box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+    }
+   
+    #border {
+        position: relative;
+    }
+
+    .border-style-sidebar {
+        width: 120px;
+        height: 5px;
+        border-radius: 10px;
+        background:  linear-gradient(to bottom left, #f83600, #f9d423);
     }
 
 }

@@ -16,6 +16,12 @@ h3 {
    padding-bottom: 50px;
    padding-top: 50px;
 }
+.sidebar-bottom-border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 /* Hide the images by default */
 .mySlides {
   display: none;

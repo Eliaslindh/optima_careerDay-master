@@ -357,3 +357,9 @@ footer button.show{
     background-color: black;
     margin: 0.2rem;
 }
+.sidebar-bottom-border {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
