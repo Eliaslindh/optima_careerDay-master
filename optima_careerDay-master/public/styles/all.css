@@ -198,8 +198,15 @@ title{
         transition: ease-in 0.5s;
         z-index: 2;
         display: block;
-        border-right: 2px solid linear-gradient(to bottom left, #f83600, #f9d423);
-        border-top: 2px solid linear-gradient(to bottom left, #f83600, #f9d423);
+        
+    }
+
+    
+    .border {
+        width: 120px;
+        height: 5px;
+        border-radius: 10px;
+        background:  linear-gradient(to bottom left, #f83600, #f9d423);
     }
 
     #close {
